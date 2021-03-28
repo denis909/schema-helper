@@ -7,6 +7,11 @@ use Yii;
 class SchemaHelper
 {
 
+    public static function createIndex(string $name, string $tableName, $columns = [], $unique = false)
+    {
+        Yii::$app->db->createCommand()->createIndex($name, $tableName, $columns, $unique)->execute();
+    }    
+
     public static function createView(string $tableName, string $sql)
     {
         $sql = 'CREATE VIEW ' . $tableName . ' AS ' . $sql;
