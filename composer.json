@@ -1,5 +1,5 @@
 {
-    "name": "denis909/schema-helper",
+    "name": "denis909/yii2-schema-helper",
     "license": "MIT",
     "autoload": {
         "psr-4": {
